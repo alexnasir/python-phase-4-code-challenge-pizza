@@ -76,8 +76,8 @@ class RestaurantPizzas(Resource):
             "price": restaurant_pizza.price,
             "pizza_id": restaurant_pizza.pizza_id,
             "restaurant_id": restaurant_pizza.restaurant_id,
-            "pizza": pizza.to_dict(only=("id", "name", "ingredients")),  # Include pizza details
-            "restaurant": restaurant.to_dict(only=("id", "name", "address"))  # Include restaurant details
+            "pizza": pizza.to_dict(only=("id", "name", "ingredients")),  
+            "restaurant": restaurant.to_dict(only=("id", "name", "address")) 
         }), 201)
 
 
